@@ -1,2 +1,2 @@
-# reposite
-Generate &amp; deploy static sites for your GitHub repositories
+# reposite-contentful-template
+Reposite template for the Contentful GitHub repositories
