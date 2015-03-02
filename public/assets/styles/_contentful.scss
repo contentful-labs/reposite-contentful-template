@@ -1,0 +1,163 @@
+/*------------------------------------*\
+  HEADER
+\*------------------------------------*/
+
+.header {
+  background-color: $color-main-dark;
+  padding: 40px 0;
+
+  &__logo {
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  &__title {
+    color: white;
+    font-size: 28px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $color-main-light;
+  }
+
+  &__nav {
+    padding: 18px 0;
+  }
+
+  &__link {
+    border-right: 1px solid $color-main-mid;
+    color: $color-grey-dark;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 20px;
+
+    &:last-of-type {
+      border: none;
+    }
+
+    &:before {
+      color: $color-main-mid;
+      margin-right: .4em;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+
+/*------------------------------------*\
+  CONTENT
+\*------------------------------------*/
+
+.content {
+  padding: 60px 0;
+
+  &__text {
+
+    h1:first-of-type {
+      margin-top: 0;
+    }
+
+    p,
+    pre {
+      margin-bottom: 2em;
+    }
+
+    p + pre {
+      margin-top: -1em;
+    }
+
+    pre {
+      background-color: $color-grey-light !important;
+      border: 1px solid $color-grey-dark !important;
+      font-size: 12px !important;
+      padding: 15px !important;
+
+      .tag,
+      .kwd {
+        color: $color-blue-dark;
+      }
+
+      .pln {
+        color: $color-main-mid;
+      }
+
+      .typ {
+        color: $color-red-dark;
+      }
+
+      .str,
+      .lit {
+        color: $color-green-dark;
+      }
+
+      .pun {
+        color: $color-main-light;
+      }
+    }
+  }
+
+  &__links {
+    display: block;
+    font-size: 14px;
+    padding-left: 15px;
+
+    &:first-of-type {
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    &:before {
+      margin-right: .5em;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+/*------------------------------------*\
+  CNAV
+\*------------------------------------*/
+
+.cnav {
+  background-color: $color-grey-light;
+  border: 1px solid $color-grey-dark;
+  padding: 1em 0;
+
+  &__item {
+    color: $color-main-light;
+    font-size: 14px;
+    display: block;
+    line-height: 2.5;
+    padding-left: 15px;
+    position: relative;
+    transform: translateX(-1px);
+    transition: all .4s ease-in-out;
+
+    &--active {
+      border-left: 2px solid $color-blue-dark;
+      color: $color-main-dark;
+      padding-left: 20px;
+    }
+
+    &:hover {
+      color: $color-main-dark;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: $color-main-light;
+      text-decoration: none;
+    }
+  }
+}

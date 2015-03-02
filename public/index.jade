@@ -1,0 +1,54 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title #{ repo_name }
+    link(rel="stylesheet" href="assets/styles/application.css")
+
+  body
+    header.header
+      .container
+        .row
+          .col-md-6
+            img.header__logo.pull-left(src="assets/images/logo.svg" alt="Contentful")
+            .pull-left
+              h1.header__title #{ repo_name }
+              .header__subtitle #{ repo_description }
+
+          .col-md-6.visible-lg
+            nav.header__nav.pull-right
+              a.header__link.fi-download(href="#{ artifact_binary }") Download v#{ version }
+              a.header__link.fi-social-github(href="#{ repo_url }") GitHub
+              a.header__link.fi-home(href="http://www.contentful.com") Contentful
+
+    section.content
+      .container
+        .row
+          .content__text.col-md-9(data-action="cnav")
+            != partial("_content")
+
+          .col-md-3.visible-lg
+            nav.content__navigation.cnav(data-action="sticky")
+
+            a.content__links.fi-page(href="#{ documentation_url }") #{ documentation }
+            a.content__links.fi-social-stack-overflow(href="#") StackOverFlow
+    script(src="//code.jquery.com/jquery-latest.min.js")
+    script(src="//use.typekit.net/clw6asg.js")
+    script(src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js")
+    script(src="assets/js/sticky.js")
+    script(src="assets/js/cnav.js")
+    script(src="assets/js/scrollspy.js")
+    script.
+      $(function() {
+        try{Typekit.load();}catch(e){}
+
+        $("[data-action='sticky']").sticky({topSpacing:24});
+
+        $('pre > code').each(function(idx) {
+          $(this).parent().addClass('prettyprint');
+        });
+      });
+
+

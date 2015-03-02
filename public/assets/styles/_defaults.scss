@@ -1,0 +1,66 @@
+/*------------------------------------*\
+  COLORS
+\*------------------------------------*/
+
+$color-main-dark: #2A3039;
+$color-main-mid: #536171;
+$color-main-light: #8091A5;
+
+$color-grey-light: #F7F9FA;
+$color-grey-dark: #C5D2D8;
+
+$color-blue-light: #5B9FEF;
+$color-blue-dark: #3C80CF;
+
+$color-green-dark: #16C98D;
+$color-green-mid: #2DE5A7;
+$color-green-light: #ECF7F3;
+
+$color-red-dark: #BE433B;
+$color-red-mid: #E0534E;
+$color-red-light: #FCF7F7;
+
+$color-orange-dark: #E6D815;
+
+
+/*------------------------------------*\
+  TYPOGRAPHY
+\*------------------------------------*/
+
+$font-family-sans-serif: "Museo-sans", sans-serif;
+$font-size-base: 16px;
+$font-size-h1: 24px;
+$font-size-h2: 20px;
+$font-size-h3: 18px;
+$font-size-h4: 16px;
+
+$headings-font-weight:    700 !default;
+$headings-color: $color-main-dark;
+
+$line-height-base: 1.5;
+
+$text-color: $color-main-mid;
+
+
+/*------------------------------------*\
+  LINKS
+\*------------------------------------*/
+
+$link-color: $color-blue-dark;
+$link-hover-color: $color-main-mid;
+
+
+/*------------------------------------*\
+  CODE
+\*------------------------------------*/
+
+$code-color: $color-red-dark;
+$code-bg: $color-red-light;
+
+
+/*------------------------------------*\
+  CONTAINER
+\*------------------------------------*/
+
+$grid-gutter-width: 30px;
+$container-large-desktop: (1050px + $grid-gutter-width);

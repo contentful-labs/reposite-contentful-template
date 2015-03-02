@@ -1,0 +1,11 @@
+{
+  "globals": {
+    "repo_name": "name",
+    "repo_url": "url",
+    "repo_description": "description",
+    "documentation": "documentation",
+    "documentation_url": "documentation_url",
+    "version": "version",
+    "artifact_binary": "artifact_binary"
+  }
+}
