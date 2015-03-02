@@ -65,6 +65,10 @@
       margin-top: 0;
     }
 
+    pre + h1 {
+      margin-top: 2em;
+    }
+
     p,
     pre {
       margin-bottom: 2em;
@@ -104,13 +108,18 @@
     }
   }
 
+  &__additional {
+    margin-top: 24px;
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 24px;
+  }
+
   &__links {
     display: block;
     font-size: 14px;
     padding-left: 15px;
 
     &:first-of-type {
-      margin-top: 24px;
       margin-bottom: 8px;
     }
 
@@ -130,11 +139,10 @@
 \*------------------------------------*/
 
 .cnav {
-  background-color: $color-grey-light;
-  border: 1px solid $color-grey-dark;
-  padding: 1em 0;
+  background-color: white;
 
   &__item {
+    border-left: 2px solid $color-grey-dark;
     color: $color-main-light;
     font-size: 14px;
     display: block;

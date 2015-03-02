@@ -31,9 +31,10 @@ html
 
           .col-md-3.visible-lg
             nav.content__navigation.cnav(data-action="sticky")
+            .content__additional
+              a.content__links.fi-page(href="#{ documentation_url }") #{ documentation }
+              a.content__links.fi-social-stack-overflow(href="#") StackOverFlow
 
-            a.content__links.fi-page(href="#{ documentation_url }") #{ documentation }
-            a.content__links.fi-social-stack-overflow(href="#") StackOverFlow
     script(src="//code.jquery.com/jquery-latest.min.js")
     script(src="//use.typekit.net/clw6asg.js")
     script(src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js")
