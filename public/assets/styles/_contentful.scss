@@ -4,12 +4,35 @@
 
 .header {
   background-color: $color-main-dark;
-  padding: 40px 0;
+  padding: 40px 0 30px;
+
+  &__logo,
+  &__text {
+    margin: auto;
+
+    @media (min-width: $screen-sm-min) {
+      float: left;
+    }
+  }
 
   &__logo {
+    display: block;
+    margin-bottom: 10px;
     height: 50px;
-    margin-right: 10px;
     width: 50px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-right: 10px;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+    }
   }
 
   &__title {
@@ -47,6 +70,7 @@
 
     &:hover {
       color: white;
+      text-decoration: none;
     }
   }
 }
