@@ -33,7 +33,7 @@ html
             nav.content__navigation.cnav(data-action="sticky")
             .content__additional
               a.content__links.fi-page(href="#{ documentation_url }") #{ documentation }
-              a.content__links.fi-social-stack-overflow(href="http://stackoverflow.com/questions/tagged/" + encodeURIComponent(#{ sotag }) + "?sort=active") StackOverFlow
+              a.content__links.fi-social-stack-overflow(href="http://stackoverflow.com/questions/tagged/#{ encodeURIComponent(sotag) }?sort=active") StackOverFlow
 
     script(src="//code.jquery.com/jquery-latest.min.js")
     script(src="//use.typekit.net/clw6asg.js")
